@@ -46,10 +46,10 @@
     PROJECT_CFLAGS=""
 
   # LTO (Link Time Optimization) support
-    LTO_SUPPORT="yes"
+    LTO_SUPPORT="no"
 
   # GOLD (Google Linker) support
-    GOLD_SUPPORT="yes"
+    GOLD_SUPPORT="no"
 
   # SquashFS compression method (gzip / lzo / xz / lz4)
     SQUASHFS_COMPRESSION="lz4"
@@ -97,12 +97,12 @@
   # for a list of additinoal drivers see packages/linux-drivers
   # Space separated list is supported,
   # e.g. ADDITIONAL_DRIVERS="DRIVER1 DRIVER2"
-    ADDITIONAL_DRIVERS="RTL8192CU RTL8192DU RTL8192EU RTL8812AU mt7610u media_build mt7601u-aml"
+    ADDITIONAL_DRIVERS="RTL8192CU RTL8192DU RTL8192EU RTL8812AU"
 
   # additional Firmware to use (dvb-firmware, misc-firmware, wlan-firmware)
   # Space separated list is supported,
   # e.g. FIRMWARE="dvb-firmware misc-firmware wlan-firmware"
-    FIRMWARE="misc-firmware wlan-firmware dvb-firmware brcmfmac_sdio-firmware-aml-all rtl8723bs_bt"
+    FIRMWARE="none"
 
   # build and install ATV IR remote support (yes / no)
     ATVCLIENT_SUPPORT="no"
@@ -117,7 +117,7 @@
     AMREMOTE_SUPPORT="yes"
 
   # build with swap support (yes / no)
-    SWAP_SUPPORT="yes"
+    SWAP_SUPPORT="no"
 
   # swap support enabled per default (yes / no)
     SWAP_ENABLED_DEFAULT="no"
